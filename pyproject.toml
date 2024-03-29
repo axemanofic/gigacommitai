@@ -27,7 +27,7 @@ rtoml = "^0.10.0"
 
 
 [tool.poetry.scripts]
-gc = "gigacommitai.__main__:app"
+gigacommitai = "gigacommitai.__main__:app"
 
 
 [tool.poetry.group.dev.dependencies]
