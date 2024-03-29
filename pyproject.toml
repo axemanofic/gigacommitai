@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gigacommitai"
-version = "1.1.0"
+version = "1.1.1"
 description = "CLI инструмент для генерации коммитов на основе ИИ"
 authors = ["Roman Sotnikov <axeman.ofic@gmail.com>"]
 readme = "README.md"
