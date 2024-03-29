@@ -20,7 +20,10 @@ class ModelChat(Chat):
     messages: List[Messages] = [
         Messages(
             role=MessagesRole.USER,
-            content="Message text",
+            content="""
+            Опиши какие изменения произошли в данном коде.
+            Сгенерируй свое сообщение очень кратко.
+            """
         )
     ]
     n = 1
