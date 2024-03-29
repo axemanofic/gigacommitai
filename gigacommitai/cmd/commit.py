@@ -4,8 +4,8 @@ import typer
 
 from rich.progress import Progress, SpinnerColumn, TextColumn
 
-from gigacommit.callbacks import AppContext
-from gigacommit.git import Commit
+from ..callbacks import AppContext
+from ..git import Commit
 
 
 def commit(

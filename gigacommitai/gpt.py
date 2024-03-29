@@ -5,7 +5,7 @@ from gigachat.models import MessagesRole, Chat
 from gigachat.models.messages import Messages
 
 if TYPE_CHECKING:
-    from gigacommit.config import Config
+    from .config import Config
 
 
 class GptModel:

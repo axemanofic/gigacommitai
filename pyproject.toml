@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "gigacommit"
+name = "gigacommitai"
 version = "1.0.0"
 description = "CLI инструмент для генерации коммитов на основе ИИ"
 authors = ["Roman Sotnikov <axeman.ofic@gmail.com>"]
@@ -27,7 +27,7 @@ rtoml = "^0.10.0"
 
 
 [tool.poetry.scripts]
-gc = "gigacommit.__main__:app"
+gc = "gigacommitai.__main__:app"
 
 
 [tool.poetry.group.dev.dependencies]

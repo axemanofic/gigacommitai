@@ -1,9 +1,9 @@
 from typing import TYPE_CHECKING
-from gigacommit.gpt import GptModel
-from gigacommit.runner import TaskRunner
+from .gpt import GptModel
+from .runner import TaskRunner
 
 if TYPE_CHECKING:
-    from gigacommit.config import Config
+    from .config import Config
 
 
 class Commit:

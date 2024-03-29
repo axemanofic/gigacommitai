@@ -1,7 +1,7 @@
 import typer
 import rich
 
-from gigacommit.callbacks import AppContext
+from ..callbacks import AppContext
 
 
 app = typer.Typer()
