@@ -1,6 +1,10 @@
 import typer
 
-from .config.config import Config
+from .config import Config
+
+
+class AppContext(typer.Context):
+    obj: Config
 
 
 def config_callback(ctx: typer.Context):

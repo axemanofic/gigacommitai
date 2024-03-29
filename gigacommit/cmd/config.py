@@ -1,6 +1,7 @@
 import typer
+import rich
 
-from src.config.config import AppContext
+from gigacommit.callbacks import AppContext
 
 
 app = typer.Typer()
@@ -14,9 +15,9 @@ def config_get(ctx: AppContext, key: str):
 @app.command("set")
 def config_set(ctx: AppContext, key: str, value: str):
     ctx.obj.set(key, value)
-    ctx.obj.update()
 
 
-@app.command("list")
-def config_list(key: str):
-    return key
+@app.command("show")
+def config_show(ctx: AppContext):
+    config = ctx.obj.load()
+    rich.print(config.config)
