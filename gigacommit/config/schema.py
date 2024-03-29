@@ -13,6 +13,7 @@ class ModelSettings(Settings):
     scope: SCOPE = "GIGACHAT_API_PERS"
     credentials = "MY_CLIENT_SECRET_TOKEN"
     profanity_check = False
+    verify_ssl_certs = False
 
 
 class ModelChat(Chat):

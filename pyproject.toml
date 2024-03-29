@@ -1,9 +1,22 @@
 [tool.poetry]
 name = "gigacommit"
 version = "1.0.0"
-description = ""
+description = "CLI инструмент для генерации коммитов на основе ИИ"
 authors = ["Roman Sotnikov <axeman.ofic@gmail.com>"]
 readme = "README.md"
+license = "MIT"
+maintainers = ["Roman <axeman.ofic@gmail.com>"]
+repository = "https://github.com/axemanofic/gigacommit"
+keywords = ["python", "ai", "git", "commit"]
+classifiers = [
+  "Typing :: Typed",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -11,6 +24,7 @@ gigachat = "^0.1.16"
 typer = {extras = ["all"], version = "^0.9.0"}
 platformdirs = "^4.2.0"
 rtoml = "^0.10.0"
+
 
 [tool.poetry.scripts]
 gc = "gigacommit.__main__:app"
@@ -33,6 +47,27 @@ major_version_zero = true
 version_files = [
   "pyproject.toml:^version",
 ]
+
+[tool.black]
+line-length = 88
+include = '\.pyi?$'
+exclude = '''
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.nox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
 
 [build-system]
 requires = ["poetry-core"]
