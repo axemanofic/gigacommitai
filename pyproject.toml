@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gigacommitai"
-version = "1.1.2"
+version = "1.2.0"
 description = "CLI инструмент для генерации коммитов на основе ИИ"
 authors = ["Roman Sotnikov <axeman.ofic@gmail.com>"]
 readme = "README.md"
@@ -39,7 +39,6 @@ ruff = "^0.2.2"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-tag_format = "1.0.0"
 version_scheme = "pep440"
 version_provider = "poetry"
 update_changelog_on_bump = true

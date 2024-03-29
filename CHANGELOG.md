@@ -1,3 +1,10 @@
+## 1.2.0 (2024-03-29)
+
+### Fix
+
+- **config**: change default prompt
+- **config**: change name dir
+
 ## 1.0.0 (2024-03-29)
 
 ### Fix
