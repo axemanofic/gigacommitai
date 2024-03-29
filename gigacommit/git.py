@@ -18,10 +18,12 @@ class Commit:
         self.commit_message = model.generate_commit_message(changes)
 
     def get_staged_files(self) -> str:
-        return self.runner.get_staged_files()
+        output, error = self.runner.get_staged_files()
+        return output
+
+    def create_commit(self, commit_message: str) -> str:
+        output, error = self.runner.create_commit(commit_message, dry_run=self.dry_run)
+        return output
 
     def get_commit_message(self) -> str:
         return self.commit_message
-
-    def create_commit(self, commit_message: str) -> str:
-        return self.runner.create_commit(commit_message, dry_run=self.dry_run)

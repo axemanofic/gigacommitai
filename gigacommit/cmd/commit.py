@@ -35,6 +35,4 @@ def commit(
 
     if is_accept:
         stdout = commit.create_commit(commit_message)
-
-        typer.echo()
-        typer.echo(stdout)
+        typer.echo(f"\n{stdout}")
