@@ -7,7 +7,7 @@ from platformdirs import user_config_dir
 
 from .schema import AppSchema
 
-CONFIG_DIR = Path(user_config_dir(appname="gigacommit", appauthor=False, roaming=True))
+CONFIG_DIR = Path(user_config_dir(appname="gigacommitai", appauthor=False, roaming=True))
 
 
 class ConfigDict(UserDict):
