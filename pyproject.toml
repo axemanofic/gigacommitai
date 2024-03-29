@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gigacommit"
-version = "0.1.0"
+version = "1.0.0"
 description = ""
 authors = ["Roman Sotnikov <axeman.ofic@gmail.com>"]
 readme = "README.md"
@@ -17,9 +17,22 @@ gc = "gigacommit.__main__:app"
 
 
 [tool.poetry.group.dev.dependencies]
+commitizen = "^3.20.0"
 black = "^24.2.0"
 pyright = "^1.1.351"
 ruff = "^0.2.2"
+
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "1.0.0"
+version_scheme = "pep440"
+version_provider = "poetry"
+update_changelog_on_bump = true
+major_version_zero = true
+version_files = [
+  "pyproject.toml:^version",
+]
 
 [build-system]
 requires = ["poetry-core"]
