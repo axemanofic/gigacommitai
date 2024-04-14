@@ -1,29 +1,35 @@
-# GigaCommitAI
+<div style="text-align: center;">
+    <h1>GigaCommitAI</h1>
+    <p>CLI инструмент для генерации коммитов на основе ИИ</p>
+    <img alt="Pepy Total Downlods" src="https://img.shields.io/pepy/dt/gigacommitai?style=for-the-badge">
+    <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/gigacommitai?style=for-the-badge">
+    <img alt="PyPI - Version" src="https://img.shields.io/pypi/v/gigacommitai?style=for-the-badge">
+</div>
 
-CLI инструмент для генерации коммитов на основе ИИ
+---
 
 ## Установка
 
 > Минимальная поддерживаемая версия Python - 3.8.
-> Проверьте свою версию Python командой python --version
+> Проверьте свою версию Python командой `python --version`
 
 1. Установить gigacommit
 
 - c помощью _pip_
 
-```
+```sh
 pip install gigacommitai
 ```
 
 - c помощью _pipx_
 
-```
+```sh
 pipx install gigacommitai
 ```
 
 - c помощью _poetry_
 
-```
+```sh
 poetry add gigacommitai
 ```
 
@@ -32,7 +38,7 @@ poetry add gigacommitai
 - Получите свой Client Secret
 - Вставьте свой токен с помощью команды
 
-```
+```sh
 gigacommitai config set gigachat.settings.credentials <CLIENT_SECRET>
 ```
 
@@ -40,27 +46,28 @@ gigacommitai config set gigachat.settings.credentials <CLIENT_SECRET>
 
 1. Командой ниже можно сгенерировать сообщение для коммита
 
-```
+```sh
 gigacommitai commit
 ```
 
 2. Командой ниже можно вывести всю конфигурацию
 
-```
+```sh
 gigacommitai config show
 ```
 
 3. Командой ниже можно вывести значение параметра, например:
 
-```
+```sh
 gigacommitai config get gigachat.settings.model
 ```
 
 4. Командой ниже можно изменить значение параметра, например:
 
-```
+```sh
 gigacommitai config set gigachat.settings.model <ТВОЕ_ЗНАЧЕНИЕ>
 ```
+
 
 ## Можно ли менять конфигурацию через файл?
 
