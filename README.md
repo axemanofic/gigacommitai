@@ -1,4 +1,4 @@
-<div style="text-align: center;">
+<div align="center">
     <h1>GigaCommitAI</h1>
     <p>CLI инструмент для генерации коммитов на основе ИИ</p>
     <img alt="Pepy Total Downlods" src="https://img.shields.io/pepy/dt/gigacommitai?style=for-the-badge">
